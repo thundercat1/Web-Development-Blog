@@ -1,0 +1,29 @@
+<!doctype HTML>
+
+<html lang="en">
+	<head>
+		<link href="/scripts/bootstrap-3.2.0-dist/css/bootstrap.css" rel="stylesheet">
+		<script src="/scripts/angular.min.js"></script>
+		<script src="/scripts/angular-route.min.js"></script>
+		<script src="/scripts/angular-sanitize.js"></script>
+		<script src="/scripts/ui-bootstrap-tpls-0.11.0.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+
+	<body ng-app="angularApp">
+		<!--Nav Header-->
+		<nav class="navbar" ng-controller="navController">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav">
+					<a class="navbar-brand" href="{{links.home.url}}">{{links.home.text}}</a>
+					<li ng-repeat="link in links.linklist"><a href="{{link.url}}">{{link.text}}</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="main">
+			<!--Main Content -->
+			<div ng-view></div>
+		</div>
+	</body>
+</html>

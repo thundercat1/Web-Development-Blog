@@ -1,0 +1,22 @@
+<!Doctype HTML>
+
+<h1>Click the button to retrive protection options from database</h1>
+
+<script>
+function httpGet(theUrl) {
+    	var xmlHttp = null;
+        xmlHttp = new XMLHttpRequest();
+	xmlHttp.open( "GET", theUrl, false );
+	xmlHttp.send( null );
+	return xmlHttp.responseText;
+}
+
+function fillProtectionData(div) {
+	div.innerHTML += httpGet('http://localhost/cgi-bin/showDatabase.py')
+  }
+</script>
+
+
+<button onclick = fillProtectionData(document.getElementById('protectionList')) type='button'>Click to Retrieve Pro</button>
+
+<div id = 'protectionList'></div>
