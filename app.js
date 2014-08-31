@@ -17,6 +17,14 @@ angularApp.config(function($routeProvider){
 
 angularApp.controller('navController', function($scope, navLinks){
 	$scope.links = navLinks;
+	$scope.dropdownActive = false;
+	$scope.toggleDropdown = function(){
+		$scope.dropdownActive = !$scope.dropdownActive;
+		console.log('toggling dropdown');
+	}
+	$scope.dropdownMouseleave = function(){
+		$scope.dropdownActive = false;
+	}
 });
 
 angularApp.controller('homeController', function($scope){
@@ -30,8 +38,6 @@ angularApp.controller('blogController', function($scope, $http){
 		console.log(data);
 		$scope.entries = data;	
 	});
-	
-
 });
 
 angularApp.controller('contactController', function($scope){
@@ -40,9 +46,14 @@ angularApp.controller('contactController', function($scope){
 
 navLinks = angularApp.factory('navLinks', function(){
 	return {
+	 	'home': {'text': 'Home', 'url': '#'},
+
 		'linklist': [{'text': 'Blog', 'url': '#blog'},
 		    {'text': 'Contact', 'url': '#contact'}
 		    ],
-	 	'home': {'text': 'Home', 'url': '#'}
+
+	 	'projectlist': [{'text': 'Reservation App', 'url': '/reservations'},
+		    {'text': 'Geography List', 'url': '/geography'}
+		    ]
 	};
 });
