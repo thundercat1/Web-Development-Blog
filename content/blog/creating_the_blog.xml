@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<data>
+	<title>
+		What's this project about?
+	</title>
+
+	<date>
+		8/30/2014
+	</date>
+
+	<body><![CDATA[
+		<p>It's been twleve years since I wrote my first lines of code. At the time I learned just enough Matlab to get through my mechanical engineering classes, and no more. As I worked my way through the degree program, I came to enjoy writing code a little more, but never to the extent that I'd do it in my off time.</p>
+		<p>After finishing my degree and moving on to non-technical fields, I found myself looking for excuses to write code -- as a teacher, building a class website from scratch. As a merchandiser at an ecommerce site, building site scrapers to keep an eye on the competition. I soon realized that I enjoyed coding not only because it was useful, but because it was fun.</p> 
+		<p>During my "hobby coding" years I've learned a lot of technologies and techniques as I bit off a weekend project here, an evening study session there. But looking back, I don't have a lot to show for it. I never made a real effort to make my projects presentable (command line scripts and, if I was in a UX kind of mood, an html form to kick it off) and haven't done a good job of collecting them in one place.</p>
+		<p>To bring a little more focus to my hobby and improve my skills, and in an attempt to have something to show for time spent in those weekend projects, I'm committing to, for each project, adding some element to make it useful (or at least accessible) over the web, and adding a blog entry to describe it and hopefully provide some information on how to tackle the project for other hobbyists. But just because I'm making my projects public facing doesn't mean I'll jump at shortcuts or do them the easy (or even right) way. This isn't a job, after all. Expect to find projects that build a little more from the ground up than is really advisable, and often are more about learning a new skill than delivering groundbreaking functionality.</p>
+		]]>
+	</body>
+</data>
