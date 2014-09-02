@@ -36,7 +36,7 @@ angularApp.controller('blogController', function($scope, $http){
 
 	 $http.get('/cgi-bin/blog_content_aggregator.py').success(function(data){
 		console.log(data);
-		$scope.entries = data;	
+		$scope.entries = data;
 	});
 });
 

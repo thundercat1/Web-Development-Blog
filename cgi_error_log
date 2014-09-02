@@ -131,3 +131,262 @@ Traceback (most recent call last):
     print >> sys.stderror, 'Server name matched'
 AttributeError: 'module' object has no attribute 'stderror'
 
+20140902T165332: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+Server name matched
+www.thundercatdesigns.com
+
+20140902T173157: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+Server name matched
+www.thundercatdesigns.com
+
+20140902T173724: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+Server name matched
+www.thundercatdesigns.com
+
+20140902T175038: thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+No server name match thundercatdesigns.com did not match server name
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 20, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '/var/www/content/blog'
+
+20140902T175052: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+Server name matched
+www.thundercatdesigns.com
+
+20140902T175102: thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+No server name match thundercatdesigns.com did not match server name
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 20, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '/var/www/content/blog'
+
+20140902T175126: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+Server name matched
+www.thundercatdesigns.com
+
+20140902T175133: thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+No server name match thundercatdesigns.com did not match server name
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 20, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '/var/www/content/blog'
+
+20140902T175322: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+Server name matched
+www.thundercatdesigns.com
+
+20140902T175328: thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+No server name match thundercatdesigns.com did not match server name
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 20, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '/var/www/content/blog'
+
+20140902T175611: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+Server name matched
+www.thundercatdesigns.com
+
+20140902T175624: thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+No server name match thundercatdesigns.com did not match server name
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 20, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '/var/www/content/blog'
+
+20140902T175659: thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+No server name match thundercatdesigns.com did not match server name
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 20, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '/var/www/content/blog'
+
+20140902T175706: thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+No server name match thundercatdesigns.com did not match server name
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 20, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '/var/www/content/blog'
+
+20140902T175713: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+Server name matched
+www.thundercatdesigns.com
+
+20140902T175728: thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+No server name match thundercatdesigns.com did not match server name
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 20, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '/var/www/content/blog'
+
+20140902T180608: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+Server name matched
+www.thundercatdesigns.com
+
+20140902T180623: thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+No server name match thundercatdesigns.com did not match server name
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 20, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '/var/www/content/blog'
+
+20140902T180850: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+Server name matched
+www.thundercatdesigns.com
+
+20140902T181141: thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+No server name match thundercatdesigns.com did not match server name. Setting to local path.
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 18, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '/var/www/content/blog'
+
+20140902T181538: thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+No server name match thundercatdesigns.com did not match server name. Setting to local path.
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 18, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '/var/www/content/blog'
+
+20140902T181911: thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+No server name match thundercatdesigns.com did not match server name. Setting to local path.
+
+thundercatdesigns.com
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 19, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '/var/www/content/blog'
+
