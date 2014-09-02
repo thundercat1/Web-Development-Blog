@@ -1,0 +1,133 @@
+20140403T225532: thundercatdesigns.com/cgi-bin/pytest.py
+suexec policy violation: see suexec log for more details
+
+20140403T225759: thundercatdesigns.com/cgi-bin/pytest.py
+suexec policy violation: see suexec log for more details
+
+20140403T231619: thundercatdesigns.com/cgi-bin/pytest.py
+suexec policy violation: see suexec log for more details
+
+20140403T231621: thundercatdesigns.com/cgi-bin/pytest.py
+suexec policy violation: see suexec log for more details
+
+20140403T231632: thundercatdesigns.com/cgi-bin/pytest.py
+suexec policy violation: see suexec log for more details
+
+20140403T231832: thundercatdesigns.com/cgi-bin/pytest.py
+suexec policy violation: see suexec log for more details
+
+20140403T231836: thundercatdesigns.com/cgi-bin/pytest.py
+suexec policy violation: see suexec log for more details
+
+20140403T231932: thundercatdesigns.com/cgi-bin/pytest.py
+suexec policy violation: see suexec log for more details
+
+20140403T232050: thundercatdesigns.com/cgi-bin/pytest.py
+suexec policy violation: see suexec log for more details
+
+20140403T232304: thundercatdesigns.com/cgi-bin/pytest.py
+suexec policy violation: see suexec log for more details
+
+20140403T232339: thundercatdesigns.com/cgi-bin/pytest.py
+suexec policy violation: see suexec log for more details
+
+20140403T232439: thundercatdesigns.com/cgi-bin/pytest.py
+suexec policy violation: see suexec log for more details
+
+20140403T233538: www.thundercatdesigns.com/cgi-bin/pytest.py
+suexec policy violation: see suexec log for more details
+
+20140404T052848: www.thundercatdesigns.com/cgi-bin/pytest.py
+suexec policy violation: see suexec log for more details
+
+20140404T052943: www.thundercatdesigns.com/cgi-bin/pytest.py
+suexec policy violation: see suexec log for more details
+
+20140404T053015: thundercatdesigns.com/cgi-bin/pytest.py
+suexec policy violation: see suexec log for more details
+
+20140902T145847: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 13, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '/content/blog'
+
+20140902T145852: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 13, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '/content/blog'
+
+20140902T145935: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 13, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '/content/blog'
+
+20140902T150039: thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 13, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '/content/blog'
+
+20140902T150419: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 13, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '/content/blog'
+
+20140902T150624: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 13, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '~/content/blog'
+
+20140902T151017: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 13, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: '../../content/blog'
+
+20140902T151100: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 13, in <module>
+    for f in os.listdir(path):
+OSError: [Errno 2] No such file or directory: 'http://www.thundercatdesigns.com/content/blog'
+
+20140902T153536: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 9, in <module>
+    if os.enrivon['HOME'] == '/home/mch':
+AttributeError: 'module' object has no attribute 'enrivon'
+
+20140902T154435: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+{'HTTP_REFERER': 'http://www.thundercatdesigns.com/', 'SERVER_SOFTWARE': 'Apache/2', 'SCRIPT_NAME': '/cgi-bin/blog_content_aggregator.py', 'REQUEST_METHOD': 'GET', 'SERVER_PROTOCOL': 'HTTP/1.1', 'PATH': '/usr/local/bin:/usr/bin:/bin', 'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/36.0.1985.125 Chrome/36.0.1985.125 Safari/537.36', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_COOKIE': 'is_mobile=0', 'SERVER_NAME': 'www.thundercatdesigns.com', 'REMOTE_PORT
+20140902T154643: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+{'HTTP_REFERER': 'http://www.thundercatdesigns.com/', 'SERVER_SOFTWARE': 'Apache/2', 'SCRIPT_NAME': '/cgi-bin/blog_content_aggregator.py', 'REQUEST_METHOD': 'GET', 'SERVER_PROTOCOL': 'HTTP/1.1', 'PATH': '/usr/local/bin:/usr/bin:/bin', 'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/36.0.1985.125 Chrome/36.0.1985.125 Safari/537.36', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_COOKIE': 'is_mobile=0', 'SERVER_NAME': 'www.thundercatdesigns.com', 'REMOTE_PORT
+20140902T154914: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+{'HTTP_REFERER': 'http://www.thundercatdesigns.com/', 'SERVER_SOFTWARE': 'Apache/2', 'SCRIPT_NAME': '/cgi-bin/blog_content_aggregator.py', 'REQUEST_METHOD': 'GET', 'SERVER_PROTOCOL': 'HTTP/1.1', 'PATH': '/usr/local/bin:/usr/bin:/bin', 'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/36.0.1985.125 Chrome/36.0.1985.125 Safari/537.36', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_COOKIE': 'is_mobile=0', 'SERVER_NAME': 'www.thundercatdesigns.com', 'REMOTE_PORT
+20140902T155011: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+{'HTTP_COOKIE': 'is_mobile=0', 'SERVER_SOFTWARE': 'Apache/2', 'SCRIPT_NAME': '/cgi-bin/blog_content_aggregator.py', 'REQUEST_METHOD': 'GET', 'SERVER_PROTOCOL': 'HTTP/1.1', 'PATH': '/usr/local/bin:/usr/bin:/bin', 'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/36.0.1985.125 Chrome/36.0.1985.125 Safari/537.36', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_REFERER': 'http://www.thundercatdesigns.com/', 'SERVER_NAME': 'www.thundercatdesigns.com', 'REMOTE_PORT
+20140902T155149: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+{'HTTP_REFERER': 'http://www.thundercatdesigns.com/', 'SERVER_SOFTWARE': 'Apache/2', 'SCRIPT_NAME': '/cgi-bin/blog_content_aggregator.py', 'REQUEST_METHOD': 'GET', 'SERVER_PROTOCOL': 'HTTP/1.1', 'PATH': '/usr/local/bin:/usr/bin:/bin', 'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/36.0.1985.125 Chrome/36.0.1985.125 Safari/537.36', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_COOKIE': 'is_mobile=0', 'SERVER_NAME': 'www.thundercatdesigns.com', 'REMOTE_PORT
+20140902T155233: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+{'HTTP_REFERER': 'http://www.thundercatdesigns.com/', 'SERVER_SOFTWARE': 'Apache/2', 'SCRIPT_NAME': '/cgi-bin/blog_content_aggregator.py', 'REQUEST_METHOD': 'GET', 'SERVER_PROTOCOL': 'HTTP/1.1', 'PATH': '/usr/local/bin:/usr/bin:/bin', 'HTTP_USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/36.0.1985.125 Chrome/36.0.1985.125 Safari/537.36', 'HTTP_CONNECTION': 'keep-alive', 'HTTP_COOKIE': 'is_mobile=0', 'SERVER_NAME': 'www.thundercatdesigns.com', 'REMOT
+20140902T155426: www.thundercatdesigns.com/cgi-bin/blog_content_aggregator.py
+
+
+
+
+
+
+
+Traceback (most recent call last):
+  File "/home/users/web/b354/moo.thundercatdesignscom/cgi-bin/blog_content_aggregator.py", line 11, in <module>
+    print >> sys.stderror, 'Server name matched'
+AttributeError: 'module' object has no attribute 'stderror'
+

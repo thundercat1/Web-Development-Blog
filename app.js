@@ -34,7 +34,7 @@ angularApp.controller('homeController', function($scope){
 angularApp.controller('blogController', function($scope, $http){
 	$scope.message = "This is where the blog is";
 
-	 $http.get('http://127.0.0.1/cgi-bin/blog_content_aggregator.py').success(function(data){
+	 $http.get('/cgi-bin/blog_content_aggregator.py').success(function(data){
 		console.log(data);
 		$scope.entries = data;	
 	});
@@ -57,3 +57,4 @@ navLinks = angularApp.factory('navLinks', function(){
 		    ]
 	};
 });
+
