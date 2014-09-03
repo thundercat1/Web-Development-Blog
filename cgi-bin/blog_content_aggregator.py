@@ -7,13 +7,16 @@ import sys
 print 'Content-type: application/json'
 print '\n'
 
+'''
+unnecessary correction for absolute filepaths
 if os.environ['SERVER_NAME'] == 'thundercatdesigns.com':
     print >> sys.stderr, 'Server name matched web, setting path to thundercatdesigns'
-    path = '/home/users/web/b354/moo.thundercatdesignscom/content/blog'
+    #path = '/home/users/web/b354/moo.thundercatdesignscom/content/blog'
 else:
     print >> sys.stderr, 'No server name match', os.environ['SERVER_NAME'], 'did not match server name. Setting to local path.\n'
-    #print >> sys.stderr, os.environ['SERVER_NAME']
-    path = ('/var/www/content/blog')
+    #path = ('/var/www/content/blog')
+'''
+path = '../content/blog'
 
 content = []
 for f in os.listdir(path):

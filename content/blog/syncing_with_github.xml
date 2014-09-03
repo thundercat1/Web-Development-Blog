@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<data>
+	<title>
+		Getting the project onto the web
+	</title>
+
+	<date>
+		8/31/2014
+	</date>
+
+	<body><![CDATA[
+		<p>Today's project was getting the blog off my toy laptop (I've been using my Acer c720p Chromebook running LXDE with Crouton to write and test everything locally) and out into the world. My goals were to get everything synced with Github so I'd have some cloud backup for my hard drive and version control, and to deploy everything to my <a href="http://www.fatcow.com">FatCow</a> hosted site.</p>
+		<h3>GitHub</h3>
+		<p>First things first, I created a repository on the <a href='http://www.github.com>GitHub</a> site. Once that's done, it's easy enough to create a repository locally using <code>git init</code> from the command line in the local directory. Fortunately after creating a repository through their GUI, Github is nice enough to provide a code snippet for adding the remote (which saved me from doing the tutorial over again)</p>
+		<p>
+			Getting everything sent over to GitHub seemed easy enough at first, using something like
+		</p>
+		
+		<pre style="text-align: left">
+			git add -A
+			git commit -m "first commit"
+			git push origin master
+		</pre>
+		<p>Things got more complex trying to send a Python cgi script (which populates the blog page by gathering up individual posts and sending them as response to an AJAX request -- I'll post more on my makeshift content management system later) to GitHub. The trouble was that my Apache2 server was configured to execute cgi scripts only from the <code>/usr/lib/cgi-bin</code>, while it served the rest of the page's static files from <code>/var/www</code>. After much fumbling, I finally gave up on maintaining a cgi-bin separate from the web root and took a different course of action: stepping way outside of my comfort zone and, using <a href="http://www.techrepublic.com/blog/diy-it-guy/diy-enable-cgi-on-your-apache-server/">this nice article</a> as a jumping off point, creating a new cgi folder at <code>/var/www/cgi-bin</code> and configure Apache2's sites-available to allow this new cgi folder, and stop redirecting requests <code>cgi-bin</code> requests.</p>
+		<p>
+			<a href="https://github.com/thundercat1/Web-Development-Blog.git">The resulting GitHub Repository</a>
+		</p>
+		<h3>Hosted Server</h3>
+		<p>Sending the site file tree to the <a href="http://www.fatcow.com">FatCow</a> hosted server turned out to be a tedious process, and one I'll have to look at automating more in the future. For today, the routine was to ftp in, create the directory structure, and then use <code>lcd [localDirectory]</code>, <code>cd [remoteDirectory]</code> and <code>mput *</code> to copy files for each directory, one at a time. I did find out that beginning the ftp session with the <code>-i</code> option, which ignores requests for input, makes a big difference in this operation so that you don't have to approve each file overwrite individually. Still, it took at least half an hour to get everything sent, and in the future I'll be stuck pushing changed files one at a time after they've been edited. This is definitely a good opportunity for automating, at the very least with a script that can walk recursively through the local directory and ftp each file to the remote server.</p>
+		]]>
+		
+	</body>
+</data>
