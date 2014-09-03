@@ -35,7 +35,16 @@ angularApp.controller('blogController', function($scope, $http){
 	$scope.message = "This is where the blog is";
 
 	 $http.get('/cgi-bin/blog_content_aggregator.py').success(function(data){
-		console.log(data);
+		 //Transform string into an actual date before displaying
+		 //and then sort by date, descending
+		data = data.map(function(entry){
+			return {'title': entry.title, 'date': new Date(entry.date), 'body': entry.body}
+		}).sort(function(a,b){
+			if (a.date > b.date) {return -1};
+			if (a.date < b.date) {return 1};
+			return 0;
+		});
+
 		$scope.entries = data;
 	});
 });
