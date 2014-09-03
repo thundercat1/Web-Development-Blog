@@ -55,7 +55,7 @@ angularApp.controller('contactController', function($scope){
 
 navLinks = angularApp.factory('navLinks', function(){
 	return {
-	 	'home': {'text': 'Home', 'url': '#'},
+	 	'home': {'text': 'ThundercatDesigns', 'url': '#'},
 
 		'linklist': [{'text': 'Blog', 'url': '#blog'},
 		    {'text': 'Contact', 'url': '#contact'}
