@@ -1,6 +1,7 @@
 var angularApp = angular.module('angularApp', ['ngRoute', 'ngSanitize']);
 
 angularApp.config(function($routeProvider){
+	//routing information
 	$routeProvider.when('/',{
 		templateUrl: 'pages/home.html',
 		controller: 'homeController'
@@ -15,53 +16,51 @@ angularApp.config(function($routeProvider){
 	})
 });
 
-angularApp.controller('navController', function($scope, navLinks){
+angularApp.controller('navController', function($scope, navLinks, navStatus){
 	$scope.links = navLinks;
-	$scope.dropdownActive = false;
-	$scope.navbarCollapsed = true;
 
-	$scope.toggleDropdown = function(){
-		$scope.dropdownActive = !$scope.dropdownActive;
-		console.log('toggling dropdown');
-	}
+	navStatus.update = function(){
+		$scope.navStatus = navStatus;
+	};
+	navStatus.update();
+});
 
-	$scope.dropdownMouseleave = function(){
-		$scope.dropdownActive = false;
-	}
+angularApp.service('navStatus', function(){
+	this.navbarCollapsed = true;
+	this.projectDropdownActive = false;
 
-	$scope.toggleNavCollapse = function(newState){
-		if (newState === undefined){
-			$scope.navbarCollapsed = !$scope.navbarCollapsed;
-		} else {
-			$scope.navbarCollapsed = newState;
-		}
+	this.toggleNavCollapse = function(){
+		this.navbarCollapsed = !this.navbarCollapsed;
+		this.update();
+	};
+
+	this.toggleProjectDropdown = function(){
+		this.projectDropdownActive = !this.projectDropdownActive;
+		this.update();
+	};
+
+	this.collapseNav = function(){
+		this.navbarCollapsed = true;
+		this.update();
+	};
+
+	this.collapseProjectDropdown = function(){
+		this.projectDropdownActive = false;
+		this.update();
 	};
 });
 
 angularApp.controller('homeController', function($scope){
-	$scope.message = "Welcome to the main page";
 });
 
-angularApp.controller('blogController', function($scope, $http){
-	$scope.message = "This is where the blog is";
-
-	 $http.get('/cgi-bin/blog_content_aggregator.py').success(function(data){
-		 //Transform string into an actual date before displaying
-		 //and then sort by date, descending
-		data = data.map(function(entry){
-			return {'title': entry.title, 'date': new Date(entry.date), 'body': entry.body}
-		}).sort(function(a,b){
-			if (a.date > b.date) {return -1};
-			if (a.date < b.date) {return 1};
-			return 0;
-		});
-
-		$scope.entries = data;
+angularApp.controller('blogController', function($scope, $http, blogPostFormatter){
+	$http.get('/cgi-bin/blog_content_aggregator.py').success(function(data){
+		$scope.entries = blogPostFormatter(data);
 	});
 });
 
+
 angularApp.controller('contactController', function($scope){
-	$scope.message = "Why don't you contact us?";
 });
 
 navLinks = angularApp.factory('navLinks', function(){
@@ -78,3 +77,15 @@ navLinks = angularApp.factory('navLinks', function(){
 	};
 });
 
+angularApp.factory('blogPostFormatter', function(){
+	//Transform string into an actual date before displaying
+	//and then sort by date, descending
+	return function(data){
+		return data.map(function(entry){
+			return {'title': entry.title, 'date': new Date(entry.date), 'body': entry.body}
+		}).sort(function(a,b){
+			if (a.date > b.date) {return -1};
+			if (a.date < b.date) {return 1};
+			return 0;
+		})};
+});
