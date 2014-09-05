@@ -18,13 +18,24 @@ angularApp.config(function($routeProvider){
 angularApp.controller('navController', function($scope, navLinks){
 	$scope.links = navLinks;
 	$scope.dropdownActive = false;
+	$scope.navbarCollapsed = true;
+
 	$scope.toggleDropdown = function(){
 		$scope.dropdownActive = !$scope.dropdownActive;
 		console.log('toggling dropdown');
 	}
+
 	$scope.dropdownMouseleave = function(){
 		$scope.dropdownActive = false;
 	}
+
+	$scope.toggleNavCollapse = function(newState){
+		if (newState === undefined){
+			$scope.navbarCollapsed = !$scope.navbarCollapsed;
+		} else {
+			$scope.navbarCollapsed = newState;
+		}
+	};
 });
 
 angularApp.controller('homeController', function($scope){
