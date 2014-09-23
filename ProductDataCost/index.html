@@ -1,0 +1,114 @@
+
+<!doctype HTML>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap.js"></script>
+<script src="productDataCost.js"></script>
+</head>
+
+<body ng-app="productDataApp" ng-controller="productDataAppController">
+
+<div class="container-fluid">
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Product Data Costs</h1>
+			<p>A simple tool to generate a rough estimate of annual cost to create a given assortment of product data</p>
+		</div>
+	</div>
+	<div class="col-md-7">
+		<table class="table table-striped">
+			<h3>Total New Fields: {{newDataFields.length}}</h3>
+			<h3>Estimated Annual Cost: ${{totalCost().toFixed(0)}}</h3>
+			<thead>
+				<tr>
+					<th>New Field Name</th><th>Maintainer</th><th>Annual Cost</th><th>Remove</th>
+				</tr>
+			</thead>
+			<tr ng-repeat="field in newDataFields">
+				<td>{{field.name}}</td><td>{{field.responsible.name}}</td><td>${{field.annualCost.toFixed(0)}}</td><td><a href="#" class="glyphicon glyphicon-remove" ng-click="remove(field)"></a></td>
+			</tr>
+		</table>
+
+		
+
+	</div>
+
+	<div class="col-md-5">
+	<form role="form" class="form-horizontal">
+		<div class="form-group">
+			<label class="control-label col-md-5">New Data Field Name</label>
+			<div class="col-md-7">
+				<input type="text" class="form-control" placeholder="New Field Name" ng-model="newFieldName"></input>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label col-md-5">Who will enter this data?</label>
+			<div class="col-md-7">
+				<div class="btn-group" dropdown is-open="status.isopen">
+					<button type="button" class="btn btn-primary dropdown-toggle" ng-disabled="disabled">
+						{{chosenPerson.name}} <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li ng-repeat="person in people"><a href="#" ng-click="setChosenPerson(person)">{{person.name}}</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label col-md-5">What does the data get attached to?</label>
+			<div class="col-md-7">
+				<div class="btn-group" dropdown is-open="status.isopen">
+					<button type="button" class="btn btn-primary dropdown-toggle" ng-disabled="disabled">
+						{{chosenTaxonomy.name}} <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+						<li ng-repeat="tax in taxonomy"><a href="#" ng-click="setChosenTaxonomy(tax)">{{tax.name}}</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="form-group">
+			<label class="control-label col-md-5">How many seconds to create the data?</label>
+			<div class="col-md-7">
+				<input class="form-control" type="number" placeholder="Seconds to create the data" ng-model="dataInputTimeToCreate"></input>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="control-label col-md-5">How many months before the data must be reevaluated for accuracy?</label>
+			<div class="col-md-7">
+				<input class="form-control" type="number" placeholder="Months before reevaluating" ng-model="dataInputMonthsToRecheck"></input>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="col-md-offset-5">
+				<button class="btn btn-success" ng-click="addNewDataField()">Add New Data Field</button>
+			</div>
+		</div>
+
+
+
+
+	</form>
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
