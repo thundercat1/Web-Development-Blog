@@ -1,0 +1,6 @@
+park, Sugar House Park, sugar+house+park+salt+lake
+park, Liberty Park, liberty+park+salt+lake
+coffee shop, Coffee Garden, coffee+garden+salt+lake+900+East+900+South
+coffee shop, Alchemy, 390E+1700S+salt+lake
+coffee shop, Blue Star, 40.710645+-111.824108
+park, Tanner Park, tanner+park+salt+lake
